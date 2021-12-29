@@ -1,0 +1,168 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .3s cubic-bezier(.16,.8,.62,1.52);
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: rgb(233, 225, 225);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgba(53, 53, 231, 0.486);
+}
+header{
+    width:100%;
+    background: rgba(241, 239, 245, 0.021);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(4, 213, 250, 0.336);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color:rgb(19, 199, 231);
+}
+
+header .logo span{
+    color:var(--red);
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 2.5rem;
+}
+
+header .navbar ul li a{
+    color:rgba(7, 242, 250, 0.623);
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:whitesmoke;
+    border-bottom: .2rem solid whitesmoke;
+    padding:.7rem 0;
+}
+section{
+    min-height: 100vh;
+    padding:0 7%;
+    padding-top: 9rem;
+    /* background-color: black; */
+    background-image: url(https://wallpaperaccess.com/full/5651982.jpg);
+    background-attachment: fixed;
+}
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.home .socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.home .socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.home .socialbtns .fa {
+	width: 40px;
+    height: 28px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(10, 10, 10);
+	border: 1px solid #000;
+	padding-top: 12px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.home .socialbtns .fa:hover {
+	color: #de08f1;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+.home{
+    /* background-color: rgb(10, 10, 10); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-image: url(https://wallpaperaccess.com/full/5651982.jpg); */
+    opacity: 1;
+    
+}
+.home h1{
+    color: #fff;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.home p{
+    color: #fff;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    animation: 
+    typing 2s steps(20, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 27% }
+  }
+.education h1{
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+}
+.skills h1{
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+}
+.contact h1{
+    color: #fff;
+    font-size: 5rem;
+}
