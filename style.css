@@ -112,8 +112,8 @@ a, a:hover {
 }
 
 .home .socialbtns .fa:hover {
-	color: #de08f1;
-	background-color: #000;
+	color: #000000;
+	background-color: white;
 	border: 1px solid #000;
 }
 
@@ -198,30 +198,30 @@ a, a:hover {
 }
 .c{
     width: 95%;
-    animation: html 3s;
+    animation: c 3s;
 }
 .css{
     width: 88%;
-    animation: html 3s;
+    animation: css 3s;
 }
 .javascript{
     width: 50%;
-    animation: html 3s;
+    animation: javascript 3s;
 }
 .python{
     width: 93%;
-    animation: html 3s;
+    animation: python 3s;
 }
 .java{
     width: 90%;
-    animation: html 3s;
+    animation: java 3s;
 }
 @keyframes html{
     0%{
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 98%;
     }
 }
 @keyframes css{
@@ -229,7 +229,7 @@ a, a:hover {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 88%;
     }
 }
 @keyframes javascript{
@@ -237,7 +237,7 @@ a, a:hover {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 50%;
     }
 }
 @keyframes python{
@@ -245,7 +245,7 @@ a, a:hover {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 93%;
     }
 }
 @keyframes java{
@@ -261,10 +261,34 @@ a, a:hover {
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 95%;
     }
 }
 
+.about{
+    color: #fff;
+    font-size: 18px;
+}
+.about h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.about img{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+}
+.about p{
+    float: right;
+    padding-left: 10%;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
 .contact h1{
     color: #fff;
     font-size: 5rem;
