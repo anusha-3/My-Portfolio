@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
 </head>
+<!-- -------------BODY------------- -->
 <body>
         <header>
             <a href="#home" class="logo">Portfolio</a>    
@@ -35,7 +36,7 @@
 <li><a href="https://twitter.com/anusha_bera" class="fa fa-lg fa-twitter" target="_blank"></a></li>
 <!-- <li><a href="#" class="fa fa-lg fa-google-plus"></a></li> -->
 <li><a href="https://github.com/anusha-3" class="fa fa-lg fa-github" target="_blank"></a></li>
-<!-- <li><a href="#" class="fa fa-lg fa-pinterest"></a></li> -->
+<!-- <li><a href="#" class="fa fa-lg fa-"></a></li> -->
 <li><a href="https://www.linkedin.com/in/anusha3/" class="fa fa-lg fa-linkedin" target="_blank"></a></li>
 <li><a href="https://www.instagram.com/me_anusha_9/" class="fa fa-lg fa-instagram" target="_blank"></a></li>
 <!-- <li><a href="#" class="fa fa-lg fa-youtube"></a></li> -->
@@ -49,12 +50,29 @@
         <script type="text/javascript" src="./app.js"></script>
         
     </section>
+
+<!-- --------------------PROJECT----------------- -->
+
     <section class="education" id="education">
-        <h1>Hii</h1>
+        <h2>My Projects</h2>
+        
+
     </section>
+
+
+    <!-- -----------------------SKILL-------------- -->
     <section class="skills" id="skills">
         <h1>Skills</h1>
         <div class="box">
+            <li><h3>c/c++</h3>
+            <span class="bar"><span class="c"></span></span>
+        </li>
+        <li><h3>java</h3>
+            <span class="bar"><span class="java"></span></span>
+        </li>
+        <li><h3>python</h3>
+            <span class="bar"><span class="python"></span></span>
+        </li>
         <li><h3>html</h3>
             <span class="bar"><span class="html"></span></span>
         </li>
@@ -64,15 +82,7 @@
         <li><h3>javascript</h3>
             <span class="bar"><span class="javascript"></span></span>
         </li>
-        <li><h3>python</h3>
-            <span class="bar"><span class="python"></span></span>
-        </li>
-        <li><h3>java</h3>
-            <span class="bar"><span class="java"></span></span>
-        </li>
-        <li><h3>c/c++</h3>
-            <span class="bar"><span class="c"></span></span>
-        </li>
+        
         </div>
     </section>
     <section class="about" id="about">
@@ -88,8 +98,8 @@
             I'm also interested in Web devolopment, and skilled in html, css, Javascript.
             <br><br>
             I have also worked as a Cloud Computing lead in <b>GOOGLE DEVOLPER STUDENTS CLUB</b> in our college.
-            <br><br>
-            I have participated in 1 hackathon in MLH and solving different problems and exploring new fields.
+            <!-- <br><br>
+            I have participated in 1 hackathon in MLH and solving different problems and exploring new fields. -->
             <br><br>
             I  also love drawing and singing.
             I believe in practicality and love to implement stuff. I enjoy challenges that push me out of my comfort zone.</p>
@@ -97,6 +107,40 @@
     </section>
     <section class="contact" id="contact">
         <h1>contact with me</h1>
+
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>get in touch</h3>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" pattern=".+@gmail.com" size="30" placeholder="email" required>
+                <input type="text" id="phone" placeholder="phone no." required>
+                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                <button type="submit">send</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    SequreToken: "e43a9581-a8fe-4e2a-9962-5916bcb41ac3",
+
+                    // Host: "smtp.gamil.com",
+                    // Username: "anushabera009@gmail.com",
+                    // Password: "Benu@2010",
+                    To: 'anusha.tutun@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "New Contact Enquiry",
+                    Body: "Name: " + document.getElementById("name").value
+                    + "<br> Phone no. " + document.getElementById("phone").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+                    
+                }).then(
+                    message => alert(Message)
+                );
+            }
+        </script>
+
     </section>
     <script src="./script.js"></script>
 </body>

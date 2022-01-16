@@ -1,295 +1,406 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    transition:all .3s cubic-bezier(.16,.8,.62,1.52);
-    text-transform: capitalize;
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
+  text-transform: capitalize;
 }
 
-*::selection{
-    background:var(--red);
-    color:#fff;
+*::selection {
+  background: var(--red);
+  color: #fff;
 }
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
-    width:1.3rem;
+html::-webkit-scrollbar {
+  width: 1.3rem;
 }
 
-html::-webkit-scrollbar-track{
-    background: rgb(233, 225, 225);
+html::-webkit-scrollbar-track {
+  background: rgb(233, 225, 225);
 }
 
-html::-webkit-scrollbar-thumb{
-    background: rgba(53, 53, 231, 0.486);
+html::-webkit-scrollbar-thumb {
+  background: rgba(53, 53, 231, 0.486);
 }
-header{
-    width:100%;
-    background: rgba(241, 239, 245, 0.021);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top:0; left: 0;
-    z-index: 1000;
-    padding:2.5rem 7%;
-    box-shadow: 0 .5rem 1rem rgba(4, 213, 250, 0.336);
-}
-
-header .logo{
-    font-size: 2.5rem;
-    color:rgb(19, 199, 231);
+header {
+  width: 100%;
+  background: rgba(241, 239, 245, 0.021);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 2.5rem 7%;
+  box-shadow: 0 0.5rem 1rem rgba(4, 213, 250, 0.336);
 }
 
-header .logo span{
-    color:var(--red);
+header .logo {
+  font-size: 2.5rem;
+  color: rgb(19, 199, 231);
 }
 
-header .navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
+header .logo span {
+  color: var(--red);
 }
 
-header .navbar ul li{
-    margin-left: 2.5rem;
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-header .navbar ul li a{
-    color:rgba(7, 242, 250, 0.623);
-    font-size: 2rem;
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  color: rgba(7, 242, 250, 0.623);
+  font-size: 2rem;
 }
 
 header .navbar ul li a.active,
-header .navbar ul li a:hover{
-    color:whitesmoke;
-    border-bottom: .2rem solid whitesmoke;
-    padding:.7rem 0;
+header .navbar ul li a:hover {
+  color: whitesmoke;
+  border-bottom: 0.2rem solid whitesmoke;
+  padding: 0.7rem 0;
 }
-section{
-    min-height: 100vh;
-    padding:0 7%;
-    padding-top: 9rem;
-    /* background-color: black; */
-    background-image: url(https://wallpaperaccess.com/full/5651982.jpg);
-    background-attachment: fixed;
+section {
+  min-height: 100vh;
+  padding: 0 7%;
+  padding-top: 9rem;
+  /* background-color: black; */
+  background-image: url(https://wallpaperaccess.com/full/5651982.jpg);
+  background-attachment: fixed;
 }
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-a, a:hover {
-	text-decoration: none;
+a,
+a:hover {
+  text-decoration: none;
 }
 
-.home .socialbtns, .socialbtns ul, .socialbtns li {
+.home .socialbtns,
+.socialbtns ul,
+.socialbtns li {
   margin: 0;
   padding: 5px;
 }
 
 .home .socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
+  list-style: none outside none;
+  display: inline-block;
 }
 
 .home .socialbtns .fa {
-	width: 40px;
-    height: 28px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(10, 10, 10);
-	border: 1px solid #000;
-	padding-top: 12px;
-	border-radius: 22px;
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
-	-o-border-radius: 22px;
+  width: 40px;
+  height: 28px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(10, 10, 10);
+  border: 1px solid #000;
+  padding-top: 12px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -o-border-radius: 22px;
 }
 
 .home .socialbtns .fa:hover {
-	color: #000000;
-	background-color: white;
-	border: 1px solid #000;
+  color: #000000;
+  background-color: white;
+  border: 1px solid #000;
 }
 
-.home{
-    /* background-color: rgb(10, 10, 10); */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* background-image: url(https://wallpaperaccess.com/full/5651982.jpg); */
-    opacity: 1;
-    
+.home {
+  /* background-color: rgb(10, 10, 10); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-image: url(https://wallpaperaccess.com/full/5651982.jpg); */
+  opacity: 1;
 }
-.home h1{
-    color: #fff;
-    font-size: 5rem;
-    position: absolute;
-    top: 50%;
-    left: 30%;
+.home h1 {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
 }
-.home p{
-    color: #fff;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 60%;
-    left: 30%;
+.home p {
+  color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 60%;
+  left: 30%;
 }
-.typed-out{
-    overflow: hidden;
-    border-right: .15em solid rgb(255, 255, 255);
-    white-space: nowrap;
-    animation: 
-    typing 2s steps(20, end) forwards;
-    font-size: 1.6rem;
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  animation: typing 5s steps(20) infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
     width: 0;
   }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 27% }
+  to {
+    width: 27%;
   }
-.education h1{
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
 }
-.skills h1{
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
+.education{
+    background: black;
 }
-.box{
-    width: 50%;
-    margin: 3% auto;
-    color: #fff;
-    padding: 2%;
-    font-size: 20px;
-    box-shadow: 0 14px 28px rgba(9, 234, 241, 0.644), 0 10px 10px rgba(17, 169, 230, 0.562);
-}
-.skills .li{
-    margin: 20px 0;
-    padding: 10px;
-}
-.bar{
-    background: transparent;
-    display: block;
-    height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.0);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.bar:hover{
-   box-shadow: 0 14px 28ox rgba(0, 0, 0, 0.25),0 10px 10px rgba(0,0,0,0.22); 
-}
-.bar span{
-    height: 20px;
-    float: left;
-    background: linear-gradient(135deg, rgba(9, 245, 233, 0.466)0%, rgb(31, 191, 231)100%);
-}
-.html{
-    width: 98%;
-    animation: html 3s;
-}
-.c{
-    width: 95%;
-    animation: c 3s;
-}
-.css{
-    width: 88%;
-    animation: css 3s;
-}
-.javascript{
-    width: 50%;
-    animation: javascript 3s;
-}
-.python{
-    width: 93%;
-    animation: python 3s;
-}
-.java{
-    width: 90%;
-    animation: java 3s;
-}
-@keyframes html{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 98%;
-    }
-}
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 88%;
-    }
-}
-@keyframes javascript{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
-}
-@keyframes python{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 93%;
-    }
-}
-@keyframes java{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-@keyframes c{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 95%;
-    }
+.education h2 {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
 }
 
-.about{
-    color: #fff;
-    font-size: 18px;
+
+.skills {
+  background: #485563;
 }
-.about h1{
-    font-size: 5rem;
-    text-align: center;
+.skills h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  text-align: center;
 }
-.about img{
-    width: 25%;
-    height: 25%;
-    border-radius: 50%;
-    border: 2px solid whitesmoke;
+.skills :hover{
+  /* color: rgba(7, 242, 250, 0.623); */
+  color: rgba(241, 129, 195, 0.836);
 }
-.about p{
-    float: right;
-    padding-left: 10%;
+.box {
+  width: 50%;
+  margin: 3% auto;
+  color: #fff;
+  padding: 2%;
+  font-size: 20px;
+  box-shadow: 0 14px 28px rgba(9, 234, 241, 0.644),
+    0 10px 10px rgba(17, 169, 230, 0.562);
 }
-.about .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 3%;
+.skills .li {
+  margin: 20px 0;
+  padding: 10px;
 }
-.contact h1{
-    color: #fff;
-    font-size: 5rem;
+.bar {
+  background: transparent;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover {
+  box-shadow: 0 14px 28ox rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(9, 245, 233, 0.466) 0%,
+    rgb(31, 191, 231) 100%
+  );
+}
+.html {
+  width: 98%;
+  animation: html 3s;
+}
+.c {
+  width: 95%;
+  animation: c 3s;
+}
+.css {
+  width: 88%;
+  animation: css 3s;
+}
+.javascript {
+  width: 50%;
+  animation: javascript 3s;
+}
+.python {
+  width: 93%;
+  animation: python 3s;
+}
+.java {
+  width: 90%;
+  animation: java 3s;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 98%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 93%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.about {
+  color: #fff;
+  font-size: 18px;
+}
+.about h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.about img {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+.about p {
+  float: right;
+  padding-left: 10%;
+}
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+}
+.contact h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+
+
+/* ----------- */
+
+.education .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.education .projects-header h1 {
+	margin-bottom: 50px;
+}
+.education .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.education .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.education .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+.education .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+.education .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.education .project-info p {
+	color: white;
+}
+.education .project-img {
+	flex-basis: 15%;
+	height: 15%;
+	overflow: hidden;
+	position: relative;
+}
+.education .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
+.education .project-img img {
+	transition: 0.3s ease transform;
+}
+.education .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+
+
+.contact form {
+  background: wheat;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
 }
