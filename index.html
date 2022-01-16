@@ -14,11 +14,11 @@
 <!-- -------------BODY------------- -->
 <body>
         <header>
-            <a href="#home" class="logo">Portfolio</a>    
+            <a href="#home" class="logo">Anusha Bera</a>    
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="#home">home</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#education">Project</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#contact">contact</a></li>
@@ -58,15 +58,37 @@
         <br><br>
         <div class="box-container">
             <div class="box">
-                <span>1</span>
-                <h2 style="font-size: 3rem;color: aqua;">Weather-App</h2>
+                <!-- <span>1</span> -->
+                <h2 style="font-size: 3rem;color: aqua;">Weather-Forecasting website</h2>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias voluptas consectetur nulla. Ut saepe ullam distinctio qui aliquid, excepturi veritatis a iste minima. Consequatur sint ullam blanditiis architecto minima!</p>
+                <p>this website provide current weather report as you will put the location. You can search for any city ... type a ciry
+                name and click the search button. you will able to see it's current temperature.</p>
                 <!-- <button class="btn" style="cursor: pointer;">Click Me</button> -->
                 <a href="https://anusha-3.github.io/Weather-forecast-project/" class="btn" target="_blank">Click Me</a>
             </div>
             </div>
-
+        <!-- <div class="box-container">
+            <div class="box">
+                <span>1</span>
+                <h2 style="font-size: 3rem;color: aqua;">Weather-Forecasting website</h2>
+                <br><br>
+                <p>this website provide current weather report as you will put the location. You can search for any city ... type a ciry
+                name and click the search button. you will able to see it's current temperature.</p>
+                <button class="btn" style="cursor: pointer;">Click Me</button>
+                <a href="https://anusha-3.github.io/Weather-forecast-project/" class="btn" target="_blank">Click Me</a>
+            </div>
+            </div> -->
+        <div class="box-container">
+            <div class="box">
+                <!-- <span>1</span> -->
+                <h2 style="font-size: 3rem;color: aqua;">Weather-Forecasting website</h2>
+                <br><br>
+                <p>this website provide current weather report as you will put the location. You can search for any city ... type a ciry
+                name and click the search button. you will able to see it's current temperature.</p>
+                <!-- <button class="btn" style="cursor: pointer;">Click Me</button> -->
+                <a href="https://anusha-3.github.io/Weather-forecast-project/" class="btn" target="_blank">Click Me</a>
+            </div>
+            </div>
     </section>
 
 
@@ -118,38 +140,7 @@
     <section class="contact" id="contact">
         <h1>contact with me</h1>
 
-        <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h3>get in touch</h3>
-                <input type="text" id="name" placeholder="Your name" required>
-                <input type="email" id="email" pattern=".+@gmail.com" size="30" placeholder="email" required>
-                <input type="text" id="phone" placeholder="phone no." required>
-                <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
-                <button type="submit">send</button>
-            </form>
-        </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail() {
-                Email.send({
-                    SequreToken: "e43a9581-a8fe-4e2a-9962-5916bcb41ac3",
-
-                    // Host: "smtp.gamil.com",
-                    // Username: "anushabera009@gmail.com",
-                    // Password: "Benu@2010",
-                    To: 'anusha.tutun@gmail.com',
-                    From: document.getElementById("email").value,
-                    Subject: "New Contact Enquiry",
-                    Body: "Name: " + document.getElementById("name").value
-                    + "<br> Phone no. " + document.getElementById("phone").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Message: " + document.getElementById("message").value
-                    
-                }).then(
-                    message => alert(Message)
-                );
-            }
-        </script>
+        
 
     </section>
     <script src="./script.js"></script>

@@ -43,17 +43,26 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 2.5rem 7%;
+  /* padding: 2.5rem 7%; */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5px;
   box-shadow: 0 0.5rem 1rem rgba(4, 213, 250, 0.336);
 }
 
 header .logo {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: rgb(19, 199, 231);
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  animation: fadeIn 5s;
 }
-
-header .logo span {
-  color: var(--red);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header .navbar ul {
@@ -65,6 +74,15 @@ header .navbar ul {
 
 header .navbar ul li {
   margin-left: 2.5rem;
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header .navbar ul li a {
@@ -119,8 +137,8 @@ a:hover {
 }
 
 .home .socialbtns .fa:hover {
-  color: #000000;
-  background-color: white;
+  color: white;
+  background-color: rgb(20, 189, 189);
   border: 1px solid #000;
 }
 
@@ -137,6 +155,15 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 30%;
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .home p {
   color: #fff;
@@ -170,11 +197,11 @@ a:hover {
   font-size: 4.5rem;
   text-align: center;
 }
-.skills :hover{
+.skills :hover {
   /* color: rgba(7, 242, 250, 0.623); */
   color: rgba(241, 129, 195, 0.836);
 }
-.box {
+.skills .box {
   width: 50%;
   margin: 3% auto;
   color: #fff;
@@ -311,11 +338,10 @@ a:hover {
   font-size: 5rem;
 }
 
-
 /* ----------- */
 
-.education{
-    background: black;
+.education {
+  background: black;
 }
 .education h2 {
   color: #fff;
@@ -323,29 +349,42 @@ a:hover {
   text-align: center;
 }
 
-.education .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.education .box-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  width: 30%;
+  height: 50%;
+  align-items: center;
+  padding-left: 50px;
+  margin-left: 10%;
 }
 
-.education .box-container .box{
-    background:transparent;
-    border:.1rem solid rgba(23, 221, 205, 0.719);
-    margin:2rem;
-    margin-top: 3rem;
-    padding:2rem 3.5rem;
-    text-align: center;
-    position: relative;
+.education .box-container .box {
+  background: transparent;
+  border: 0.1rem solid rgba(23, 221, 205, 0.719);
+  box-shadow: 0 14px 28px rgba(9, 234, 241, 0.644),
+    0 10px 10px rgba(17, 169, 230, 0.562);
+  border-radius: 5%;
+  margin: 2rem;
+  margin-top: 3rem;
+  padding: 2rem 3.5rem;
+  text-align: center;
+  position: relative;
 }
-.education .box-container .box h3{
-    font-size: 2rem;
-    color:rgb(52, 219, 224);
-    padding:1rem 0;
+.education .box-container .box p {
+  color: #fff;
+  font-size: 15px;
+}
+.education .box-container .box h3 {
+  font-size: 2rem;
+  color: rgb(52, 219, 224);
+  padding: 1rem 0;
 }
 
-.education .box-container .box span{
+/* .education .box-container .box span{
     display: block;
     position: absolute;
     top:-2rem; left:-2rem;
@@ -355,46 +394,36 @@ a:hover {
     color:rgb(247, 251, 252);
     background:rgb(20, 189, 189);
     border-radius: 5rem;
+} */
+.education .box-container .box:hover {
+  transform: translateY(-1rem);
 }
-.education .box-container .box:hover{
-    transform:translateY(-1rem);
-}
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding:1rem 4rem;
-    border-radius: 5rem;
-    background:rgb(20, 189, 189);
-    color:#fff;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    font-size: 1.7rem;
-}
-
-.btn::before{
-    content:'';
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background:#444;
-    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-    transition:.3s linear;
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 5rem;
+  background: rgb(20, 189, 189);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  font-size: 1.7rem;
 }
 
-.btn:hover::before{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #444;
+  clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+  transition: 0.3s linear;
 }
 
-
-.contact form {
-  background: wheat;
-  display: flex;
-  flex-direction: column;
-  padding: 2vw 4vw;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
+.btn:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
