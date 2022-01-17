@@ -7,7 +7,6 @@
   border: none;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
-  /* text-transform: capitalize; */
 }
 
 *::selection {
@@ -42,7 +41,6 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  /* padding: 2.5rem 7%; */
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5px;
@@ -72,9 +70,6 @@ header .navbar ul {
   align-items: center;
   justify-content: center;
   list-style: none;
-  /* flex-direction: row; */
-  /* font-size: 30px; */
-  /* text-align: center; */
 }
 @media (max-width: 800px) {
   .navbar ul{
@@ -111,8 +106,7 @@ section {
   min-height: 100vh;
   padding: 0 7%;
   padding-top: 9rem;
-  /* background-color: black; */
-  background-image: url(https://wallpaperaccess.com/full/5651982.jpg);
+  background-image: url(./images/Background.jpg);
   background-attachment: fixed;
 }
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
@@ -121,7 +115,7 @@ a,
 a:hover {
   text-decoration: none;
 }
-
+/* --------HOME PAGE------- */
 .home .socialbtns,
 .socialbtns ul,
 .socialbtns li {
@@ -154,10 +148,8 @@ a:hover {
 }
 
 .home {
-  /* background-color: rgb(10, 10, 10); */
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background-image: url(https://wallpaperaccess.com/full/5651982.jpg); */
   opacity: 1;
 }
 .home h1 {
@@ -196,10 +188,10 @@ a:hover {
     width: 0;
   }
   to {
-    width: 27%;
+    width: 25%;
   }
 }
-
+/* -----------SKILL PAGE------ */
 .skills {
   background: #485563;
 }
@@ -209,7 +201,6 @@ a:hover {
   text-align: center;
 }
 .skills :hover {
-  /* color: rgba(7, 242, 250, 0.623); */
   color: rgba(241, 129, 195, 0.836);
 }
 .skills .box {
@@ -331,7 +322,7 @@ a:hover {
     width: 85%;
   }
 }
-
+/* -----------ABOUT PAGE----------- */
 .about {
   color: #fff;
   font-size: 18px;
@@ -356,13 +347,8 @@ a:hover {
   justify-content: center;
   padding-top: 3%;
 }
-.contact h1 {
-  color: #fff;
-  font-size: 5rem;
-}
 
-/* ----------- */
-
+/* ------------------PROJECT PAGE----------------- */
 .education {
   background: black;
 }
@@ -406,18 +392,6 @@ a:hover {
   color: rgb(52, 219, 224);
   padding: 1rem 0;
 }
-
-/* .education .box-container .box span{
-    display: block;
-    position: absolute;
-    top:-2rem; left:-2rem;
-    height:5rem; width:5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:rgb(247, 251, 252);
-    background:rgb(20, 189, 189);
-    border-radius: 5rem;
-} */
 .education .box-container .box:hover {
   transform: translateY(-1rem);
 }
@@ -452,7 +426,7 @@ a:hover {
 }
 
 
-/* --------------------- */
+/* -----------CONTACT---------- */
 
 .social{
   margin-top: 2%;
