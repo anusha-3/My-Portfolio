@@ -271,6 +271,10 @@ a:hover {
   width: 90%;
   animation: java 3s;
 }
+.sql {
+  width: 85%;
+  animation: sql 3s;
+}
 @keyframes html {
   0% {
     width: 0%;
@@ -317,6 +321,14 @@ a:hover {
   }
   100% {
     width: 95%;
+  }
+}
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
   }
 }
 
